@@ -1,6 +1,4 @@
-%%raw(`
-import './App.css';
-`)
+%%raw(`import './App.css';`)
 
 @module("./logo.svg") external logo: string = "default"
 
@@ -8,7 +6,7 @@ import './App.css';
 let make = () => {
   <div className="App">
     <header className="App-header">
-      <img src={%raw("logo")} className="App-logo" alt="logo" />
+      <img src={logo} className="App-logo" alt="logo" />
       <p>
         {React.string("Edit ")}
         <code> {React.string("src/App.js")} </code>
