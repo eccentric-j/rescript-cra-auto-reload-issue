@@ -1,7 +1,8 @@
 %%raw(`
-import logo from './logo.svg';
 import './App.css';
 `)
+
+@module("./logo.svg") external logo: string = "default"
 
 @react.component
 let make = () => {
