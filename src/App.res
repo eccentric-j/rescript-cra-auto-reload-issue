@@ -9,7 +9,7 @@ let make = () => {
       <img src={logo} className="App-logo" alt="logo" />
       <p>
         {React.string("Edit ")}
-        <code> {React.string("src/App.js")} </code>
+        <code> {React.string("src/App.res")} </code>
         {React.string(" and save to reload.")}
       </p>
       <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
