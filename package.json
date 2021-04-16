@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start:cra": "react-scripts start",
-    "start:res": "bsb make-world -w",
+    "start:res": "bsb -make-world -w",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
