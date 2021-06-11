@@ -1,5 +1,18 @@
+/**
+ * This works:
+ * But if this was import styles from './App.css'; this would also break
+ * reloading on save
+ */
 %%raw(`import './App.css';`)
 
+/**
+ * This is what is causing it to break:
+ * The issue is that it also tries to export the logo or css file and that
+ * for whatever reason causes HMR to stop being able to reload a file.
+ *
+ * If you edit App.bs.js and remove logo from exports, reload the page, and
+ * edit some of the text it will reload as expected.
+ */
 @module("./logo.svg") external logo: string = "default"
 
 @react.component
